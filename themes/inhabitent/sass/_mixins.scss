@@ -10,3 +10,41 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+//nav 
+.main-navigation{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+//footer
+
+.site-footer {
+	display: flex;
+	justify-content: space-around;
+	background-image: url("../../Images/dark-wood.png");
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.business-hours {
+	display: flex;
+	flex-direction: column;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #d99054;
+	font-family: $header__font, $font__main;
+}
+
+.copywrite{
+	text-align: center;
+	background-image: url("../../Images/dark-wood.png");
+	margin: 0px;
+}

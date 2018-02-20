@@ -22,11 +22,11 @@
 				<?php echo "<p><span class='bold'> saturday: </span> 10am to 2pm</p>";?>
 				<?php echo "<p><span class='bold'> sunday: </span> closed</p>";?>
 				</div>
-				<div class="logo-text">
-				<?php echo "<a><span class='footerlogo'>inhabitent<br/></span>camping supply co.</p></a>";?>
-				<?php echo "<i class='fas fa-address-card'></i>";?>
+				<div class="logosvg">
+				<?php echo '<a href="#"><img src="Images/inhabitent-logo-text-dark.svg" /></a>';
+;?>			
 				</div>
-
+				
 			</footer><!-- #colophon -->
 			<?php echo "<p class='copywrite'>copywrite &copy; 2017 inhabitent</p>";?>
 		</div><!-- #page -->
