@@ -41,3 +41,43 @@ function inhabitent_login_title(){
 }
 
 add_filter('login_headertitle', 'inhabitent_login_title');
+
+// function about_hero_image() {
+// if ( !is_page_template('page-templates/about.php') ) {
+// 	return;
+// }
+
+//  $img = CFS()->get( 'hero_image' );
+//  if(!$img){
+// 	 return;
+//  }
+//  $hero_image_css =".page-template-about .entry_header{
+// 	 background: url({$img}); 
+	//  display: block;
+	//  width: 100vw;
+	//  height: 100vh;
+// }";
+// wp_add_inline_style('inhabitent-style', '$hero_image_css');
+// }
+// 			add_action('wp_enqueue_scripts','about_hero_image');
+
+function user_select_hero() {
+	if(  ! is_page_template('page-templates/about.php') ) {
+		return;
+	}
+
+		$img = CFS () -> get('header_image');
+		if(! $img){
+			return;
+		}
+		$user_css = 
+			".page-template-about .entry-header{
+									background: url({$img}) no-repeat center bottom;
+									background-size: cover;
+									width: 100vw;
+									height: 100vh;
+								}";
+	wp_add_inline_style( 'inhabitent-style', $user_css );
+	}
+
+add_action( 'wp_enqueue_scripts', 'user_select_hero' );
