@@ -23,12 +23,10 @@
 				<?php echo "<p><span class='bold'> sunday: </span> closed</p>";?>
 				</div>
 				<div class="logosvg">
-				<?php echo '<a href="#"><img src="Images/inhabitent-logo-text-dark.svg" /></a>';
-;?>			
+				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-text.svg"/>	
 				</div>
 				
 			</footer><!-- #colophon -->
-			<?php echo "<p class='copywrite'>copywrite &copy; 2017 inhabitent</p>";?>
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>

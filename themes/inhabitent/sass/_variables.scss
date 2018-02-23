@@ -15,9 +15,7 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;// 
+$link__color: #248A83;
 
 // Typography
 
@@ -27,4 +25,5 @@ $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 $text__font: "Merriweather";
-$header__font: "Novovento Sans Web";
+$header__font: "Novecento";
+$font__size: 16px;

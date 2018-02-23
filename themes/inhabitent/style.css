@@ -43,8 +43,34 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-* {
-  font-family: "Novovento Sans Web"; }
+p {
+  font-family: "Novecento"; }
+
+a {
+  padding: 0;
+  background-color: #fff;
+  color: #248A83; }
+  a:visited {
+    color: #248A83; }
+  a:hover {
+    color: #2f1339; }
+
+#masthead {
+  height: 45spx;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #e1e1e1; }
+
+body.home #primary-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+  top: 0px; }
+  body.home #primary-menu ul li {
+    padding: 5px; }
 
 body.home .product-type-block-wrapper {
   display: -webkit-box;
@@ -64,16 +90,17 @@ body.home .product-type-block-wrapper {
   border-top: 5px solid #a1a1a1;
   text-align: center;
   width: 23%; }
+  body.home .product-type-block-wrapper:hover {
+    border-color: #f0e4d1; }
   body.home .product-type-block-wrapper img {
     padding-top: 10px;
     width: 30%; }
-  body.home .product-type-block-wrapper :hover {
-    border-color: #d99054; }
   body.home .product-type-block-wrapper h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    font-family: "Merriweather"; }
   body.home .product-type-block-wrapper ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,7 +150,9 @@ body.home .product-type-block-wrapper {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    padding: .5rem .5rem;
+    line-height: 1.25; }
   .inhabitent-journal ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141,16 +170,36 @@ body.home .product-type-block-wrapper {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 30%;
+    height: 450px;
     border: 1px solid #e1e1e1;
-    text-decoration: none; }
-    .inhabitent-journal li .entry-meta .entry-title a {
-      text-align: left;
-      font-size: 1.3rem;
-      line-height: 1.25rem; }
-    .inhabitent-journal li img {
-      height: 250px;
-      width: 100%;
-      border-bottom: 5px solid #e1e1e1; }
+    text-decoration: none;
+    text-align: left; }
+    .inhabitent-journal li .entry-meta {
+      height: 30%; }
+      .inhabitent-journal li .entry-meta .entry-title a {
+        text-align: left;
+        font-size: 1.3rem;
+        line-height: 1.25rem;
+        text-decoration: none; }
+    .inhabitent-journal li a.black-btn {
+      border: 1px solid black;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      bottom: 0;
+      width: 125px;
+      height: 50px;
+      text-align: center;
+      padding-top: 5px; }
+  .inhabitent-journal h2.entry-title {
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 0px; }
+  .inhabitent-journal img {
+    height: 250px;
+    width: 100%;
+    border-bottom: 5px solid #e1e1e1; }
 
 body.blog .site-main {
   margin-left: 40px;
@@ -174,20 +223,9 @@ body.blog .site-main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-transform: uppercase;
-  border-bottom: 1px solid #e1e1e1; }
+  text-transform: uppercase; }
 
-#primary-menu a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: blue; }
-
-.blog .entry-header img {
-  width: 100%;
-  height: 100%;
+.blog .entry-header {
   position: relative; }
 
 body.blog header {
@@ -207,13 +245,15 @@ body.blog article.post {
 
 body.blog h2.entry-title {
   background-color: #248A83;
-  width: 45%;
+  width: 75%;
   position: absolute;
   margin-top: 40px;
   padding-left: 24px;
   font-family: Novecento Sans Web,sans-serif;
-  font-size: 2.1rem;
-  letter-spacing: 2px; }
+  font-size: 1rem;
+  letter-spacing: 2px;
+  top: 0;
+  left: 0; }
 
 body.blog .entry-title a {
   color: white;
@@ -229,7 +269,50 @@ body.blog .entry-header .entry-meta {
   color: white;
   text-align: center;
   height: 30px;
-  position: absolute; }
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+body.archive .product-info-container {
+  border-bottom: 1px dashed #c8c8c8; }
+  body.archive .product-info-container h2 {
+    margin-bottom: 0;
+    margin-top: 50px;
+    line-height: 1.25;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem; }
+  body.archive .product-info-container a {
+    padding: 0;
+    background-color: #fff;
+    margin: 30px;
+    color: #248A83; }
+    body.archive .product-info-container a:visited {
+      color: #248A83; }
+    body.archive .product-info-container a:hover {
+      color: #2f1339; }
+  body.archive .product-info-container .product-type-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px; }
+
+body.archive .entry-header {
+  border: 1px solid #e1e1e1;
+  margin: 20px; }
+  body.archive .entry-header .entry-title {
+    font-size: 16px; }
+
+body.archive .content-block-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  body.archive .content-block-wrapper img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 5px solid #e1e1e1; }
 
 .site-footer {
   display: grid;
@@ -261,7 +344,7 @@ body.blog .entry-header .entry-meta {
 h3 {
   text-transform: uppercase;
   color: #d99054;
-  font-family: "Novovento Sans Web", sans-serif; }
+  font-family: "Novecento", sans-serif; }
 
 .copywrite {
   text-align: center;
@@ -450,6 +533,64 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+/* This stylesheet generated by Transfonter (https://transfonter.org) on February 23, 2018 9:47 PM */
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-BoldItalic.eot");
+  src: url("../fonts/merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-BoldItalic.woff2") format("woff2"), url("../fonts/merriweather-BoldItalic.woff") format("woff"), url("../fonts/merriweather-BoldItalic.ttf") format("truetype"), url("../fonts/merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-Light.eot");
+  src: url("../fonts/merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-Light.woff2") format("woff2"), url("../fonts/merriweather-Light.woff") format("woff"), url("../fonts/merriweather-Light.ttf") format("truetype"), url("../fonts/merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-Bold.eot");
+  src: url("../fonts/merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-Bold.woff2") format("woff2"), url("../fonts/merriweather-Bold.woff") format("woff"), url("../fonts/merriweather-Bold.ttf") format("truetype"), url("../fonts/merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-LightItalic.eot");
+  src: url("../fonts/merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-LightItalic.woff2") format("woff2"), url("../fonts/merriweather-LightItalic.woff") format("woff"), url("../fonts/merriweather-LightItalic.ttf") format("truetype"), url("../fonts/merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+/* This stylesheet generated by Transfonter (https://transfonter.org) on February 23, 2018 9:47 PM */
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecento-BoldItalic.eot");
+  src: url("../fonts/novecento-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento-BoldItalic.woff2") format("woff2"), url("../fonts/novecento-BoldItalic.woff") format("woff"), url("../fonts/novecento-BoldItalic.ttf") format("truetype"), url("../fonts/novecento-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecento-Light.eot");
+  src: url("../fonts/novecento-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento-Light.woff2") format("woff2"), url("../fonts/novecento-Light.woff") format("woff"), url("../fonts/novecento-Light.ttf") format("truetype"), url("../fonts/novecento-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecento-Bold.eot");
+  src: url("../fonts/novecento-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento-Bold.woff2") format("woff2"), url("../fonts/novecento-Bold.woff") format("woff"), url("../fonts/novecento-Bold.ttf") format("truetype"), url("../fonts/novecento-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecento-LightItalic.eot");
+  src: url("../fonts/novecento-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento-LightItalic.woff2") format("woff2"), url("../fonts/novecento-LightItalic.woff") format("woff"), url("../fonts/novecento-LightItalic.ttf") format("truetype"), url("../fonts/novecento-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -640,23 +781,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
+  .main-navigation img {
+    padding-top: 10px;
+    width: 50px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -665,7 +797,6 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -678,15 +809,14 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: auto; }
+    .main-navigation ul li {
+      position: relative; }
+      .main-navigation ul li a {
+        display: block;
+        text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -708,15 +838,26 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%; }
+
+.menu-menu-1-container {
+  width: 100%; }
+  .menu-menu-1-container .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%; }
+    .menu-menu-1-container .menu .menu-item {
+      padding: 1rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -754,12 +895,10 @@ a {
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
-  float: left;
   margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
-  float: right;
   margin-left: 1.5rem; }
 
 .aligncenter {

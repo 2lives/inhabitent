@@ -57,7 +57,7 @@ get_header(); ?>
 								
 								<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 								</div>
-								<a class="black-btn" href="<?php the_permalink(); ?>"Read Entry</a>
+								<a class="black-btn" href="<?php the_permalink(); ?>">Read Entry</a>
 							</li>
 				<?php endforeach;
 				wp_reset_postdata(); ?>
