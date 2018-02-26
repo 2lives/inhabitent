@@ -11,17 +11,25 @@
 	clear: both;
 	display: block;
 	width: 100%;
+	height: 50px;
+	padding-right: 80px;
 	position: fixed;
 	z-index: 100;
 	background-color:hsla(0,0%,100%,.85);
 	border-bottom: 1px solid #e1e1e1;
+	.nav-search{
+		padding-top: 15px;
+		margin-right: 40px;
+		&:hover{
+			color: $link__color;
+		}
+	}
 	a img{
 		padding-top: 10px;
 		width: 50px;
 		margin-left: 30px;
 	}
 	ul {
-		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
