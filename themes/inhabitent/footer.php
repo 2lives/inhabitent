@@ -18,15 +18,17 @@
 				</div><!-- .contact-info -->
 				<div class="business-hours">
 				<?php echo "<h3> business hours </h3>";?>
-				<?php echo "<p><span class='bold'> monday-friday: </span> 9am to 5pm</p>";?>
-				<?php echo "<p><span class='bold'> saturday: </span> 10am to 2pm</p>";?>
-				<?php echo "<p><span class='bold'> sunday: </span> closed</p>";?>
+				<?php echo "<p><span class='bold'> Monday-Friday: </span> 9am to 5pm</p>";?>
+				<?php echo "<p><span class='bold'> Saturday: </span> 10am to 2pm</p>";?>
+				<?php echo "<p><span class='bold'> Sunday: </span> Closed</p>";?>
 				</div>
 				<div class="logosvg">
-				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-text.svg"/>	
+				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-text.svg"/></a>	
 				</div>
-				
 			</footer><!-- #colophon -->
+			<div class="footer-copywrite">
+					<p>copywrite &copy; 2018 inhabitent </p>
+				</div>
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="journal-wrapper" class="content-wrapper">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -35,7 +35,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+
 
 <?php get_sidebar(); ?>
+</div><!-- #primary -->
 <?php get_footer(); ?>

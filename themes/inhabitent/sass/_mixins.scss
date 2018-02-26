@@ -3,9 +3,12 @@
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
 }
+*{
+	line-height: 1.75;
+}
 
 p{
-	font-family:$header__font;
+	font-family:$text__font;
 }
 a{
 	padding: 0;
@@ -25,20 +28,48 @@ a{
 	padding-right: 20px;
 	border-bottom: 1px solid #e1e1e1;	
 }
-//front-page (do, eat, sleep, wear) boxes
-body.home{
 
-	#primary-menu ul{
-		display: flex;
-		justify-content: space-around;
-		background-color: white;
-		top: 0px;
-		li{
-			padding: 5px;
+.widget_archive{
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		a{
+			text-decoration: none;
+			font-family: $text__font;
 		}
 	}
+}
 
-.product-type-block-wrapper{
+.widget{
+	.day-of-week {
+		font-weight: bold;
+	}
+	.svg-inline--fa{
+	padding-right: 2px;
+	}
+}
+
+//front-page (do, eat, sleep, wear) boxes
+.site-content{
+	.image-stack {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 10;
+
+	.hero-image{
+		position: relative;
+
+	}
+			.tent-logo{
+				position: absolute;
+			}
+		}
+
+	.product-type-block-wrapper{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -55,10 +86,7 @@ body.home{
 		img{
 			padding-top: 10px;
 			width: 30%;
-		}
-
-		
-		
+		}	
 		h2 {
 			text-align: center;
 			text-transform: uppercase;
@@ -102,6 +130,7 @@ body.home{
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 2rem;
+	color: $h2__color;
 }
 //inhabitent journal
 .inhabitent-journal {
@@ -174,7 +203,7 @@ h2 {
 
 
 
-// journal specific page
+// journal specific page (index.php)
 @mixin center-block {
 	display: block;
 	margin-left: auto;
@@ -182,24 +211,34 @@ h2 {
 }
 body.blog{
  .site-main{
-	margin-left: 40px;
 	max-width: 70%;
 	}	
-
-  .content-area{
-	width: 100%;
-	}
 }
+
+  #journal-wrapper{
+	display: flex;
+	width: 100%;
+		.widget-area{
+			padding-left: 5%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+
+		.widget-title{
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+	}
+
 
 
 article.post.type-post {
 	display: block;
-	width: 80%;
+	width: 90%;
 }
 
 body.blog .site-main {
 	border-right: 1px solid #e1e1e1;
-	margin-left: 10%;
 }
 
 //nav 
@@ -219,11 +258,6 @@ body.blog {
  flex-direction: column;
  max-width: 100%;
  height: auto;
-	}
-
-	article.post{
-	max-width: 100%;
-	margin-right: 0;
 	}
   h2.entry-title {
 	 background-color: #248A83;
@@ -262,8 +296,29 @@ body.blog {
 
 //shop archive page 
 body.archive{
+	.site-main{
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+	.page-header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		border-bottom: 1px dashed #c8c8c8;
+		p{
+			text-align: center;
+		}
+		h1{
+			font-size: 2.4rem;
+		}
+	}
 	.product-info-container {
 		border-bottom: 1px dashed #c8c8c8;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
 
 		h2{
 			margin-bottom: 0;
@@ -285,18 +340,27 @@ body.archive{
 				color: #2f1339;
 			}
 		}
-		.product-type-blocks {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
+	.product-type-blocks {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
 		}
+	.product-type-block-wrapper{
+		border: none;
+		width: 100px;
 	}
+}
 
 	.entry-header {
 		border: 1px solid #e1e1e1;
 		margin: 20px;
 		.entry-title{
-			font-size: $font__size;
+			font-size: 1rem;
+			font-weight: 400;
+			font-family: $text__font;
+			display: flex;
+			justify-content: space-around;
+			.entry-title:after { content: " .................................................................................." }
 		}
 	}
 	.content-block-wrapper{
@@ -311,34 +375,155 @@ body.archive{
 }
 
 
+//page.php (find-us)
+
+#find-us-wrapper-id {
+	display: flex;
+
+	h1{
+		text-transform: uppercase;
+	}
+
+	h2 {
+		text-transform: uppercase;
+	}
+
+	.findus-area{
+		width: 75%;
+		padding-right: 5%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		border-right: 1px solid #e1e1e1;
+	}
+
+	.widget-area{
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-left: 5%;
+	}
+}
+
+
 //footer
 
 .site-footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 3fr;
+	height: 270px;
 	justify-content: space-between;
 	background-image: url("../../Images/dark-wood.png");
+	padding-left: 20px;
+	padding-right: 20px;
+	.logosvg {
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 50px;
+		 img {
+			width: 80%;
+		}
+		a{
+			width: 350px;
+			height: 55px;
+		}
+	}
+	h3{
+		margin: 0;
+		text-transform: uppercase;
+		color: #d99054;
+		letter-spacing: 2px;
+	}
+	p{
+		margin: 0;
+	}
 }
 
 .contact-info {
 	display: flex;
 	flex-direction: column;
-	margin-left: 30px;
+	padding-top: 50px;
+	width: 256px;
+	height: 155px;
 }
 
 .business-hours {
 	display: flex;
 	flex-direction: column;
+	padding-top: 50px;
+	width: 256px;
+	height: 155px;
+	.bold{
+		font-weight: bold;
+		font-family: $text__font;
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 }
 
-h3 {
-	text-transform: uppercase;
-	color: #d99054;
-	font-family: $header__font, $font__main;
-}
-
-.copywrite{
+.footer-copywrite{
+	width: 100%;
 	text-align: center;
+	text-transform: uppercase;
 	background-image: url("../../Images/dark-wood.png");
-	margin: 0px;
+	height: 76px;
+	p{
+		margin: 0;
+		padding-top: 20px;
+		color: #fff;
+	}
+}
+
+//error page
+
+#error404-wrapper {
+	display: flex;
+
+	.site-main{
+		padding-right: 5%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-left: 3%;
+		border-right: 1px solid #e1e1e1;
+		width: 73%;
+		h2{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		 a{
+			 font-family: $text__font;
+		 }
+		}
+
+		.widget{
+			left: 0;
+		}
+	}
+
+	.widget-area{
+		padding-left: 5%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		width: 27%;
+
+		h2{
+			text-transform: uppercase;
+		}
+	}
+	h1{
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 2em;
+	}
 }
