@@ -21,9 +21,9 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+		<div class="article-tile">
 				<?php get_template_part( 'template-parts/content' ); ?>
-
+		</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

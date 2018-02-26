@@ -5,7 +5,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 	<div class="image-stack">
 		<div class="hero-image">		
-			<img src="<?php echo get_template_directory_uri(); ?>/Images/home-hero.jpg" style="rgba(0, 0, 0, 1.7);";/>
+			<!-- <img src="<?php echo get_template_directory_uri(); ?>/Images/home-hero.jpg" style="rgba(0, 0, 0, 1.7);";/> -->
 		</div><!--hero-image-->
 		<div class="tent-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-full.svg"/>
