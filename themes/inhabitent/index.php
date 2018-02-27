@@ -23,6 +23,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 		<div class="article-tile">
 				<?php get_template_part( 'template-parts/content' ); ?>
+				<a href="<?php echo get_permalink(); ?>" rel="bookmark" class="journal-readmore">Read More →</a>
 		</div>
 			<?php endwhile; ?>
 
@@ -32,7 +33,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+	
 		</main><!-- #main -->
 
 

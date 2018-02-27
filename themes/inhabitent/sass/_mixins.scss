@@ -267,9 +267,10 @@ body.blog{
 	.article-tile{
 		display: flex;
 		flex-direction: column;
+		padding-bottom: 50px;
 		h2.entry-title {
 			background-color: #248A83;
-			width: 50%;
+			width: 70%;
 			position: absolute;
 			margin-top: 40px;
 			padding-left: 24px;
@@ -288,9 +289,25 @@ body.blog{
 			padding-right: 5px;
 			height: 30px;
 				}
+			.journal-readmore{
+				border: 1px solid black;
+				color: black;
+				text-transform: uppercase;
+				font-family: $header__font;
+				text-decoration: none;
+				text-align: center;
+				padding: .50rem 1.1rem;
+				bottom: 0;
+				width: 150px;
+				height: 42px;
+				&:hover{
+					background-color: $link__color;
+					color: #fff;
+				}
+				}
+			}
 			}
 	}
-}	
 
   #journal-wrapper{
 	display: flex;

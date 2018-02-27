@@ -274,10 +274,11 @@ body.blog .site-main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding-bottom: 50px; }
     body.blog .site-main .article-tile h2.entry-title {
       background-color: #248A83;
-      width: 50%;
+      width: 70%;
       position: absolute;
       margin-top: 40px;
       padding-left: 24px;
@@ -293,6 +294,20 @@ body.blog .site-main {
       text-align: right;
       padding-right: 5px;
       height: 30px; }
+    body.blog .site-main .article-tile .journal-readmore {
+      border: 1px solid black;
+      color: black;
+      text-transform: uppercase;
+      font-family: "Novecento";
+      text-decoration: none;
+      text-align: center;
+      padding: .50rem 1.1rem;
+      bottom: 0;
+      width: 150px;
+      height: 42px; }
+      body.blog .site-main .article-tile .journal-readmore:hover {
+        background-color: #248A83;
+        color: #fff; }
 
 #journal-wrapper {
   display: -webkit-box;
