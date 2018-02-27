@@ -1409,3 +1409,34 @@ body.post-template-default .single-content {
     background: #248A83;
     bottom: 0;
     left: 0; }
+
+body.page-template .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/about-hero.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/about-hero.jpg");
+  background-size: cover, cover; }
+  body.page-template .entry-header .entry-title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-family: "Novecento";
+    text-transform: uppercase;
+    color: #fff; }
+
+body.page-template .entry-content {
+  margin: 3rem auto;
+  max-width: 800px; }
+  body.page-template .entry-content h1 {
+    text-align: center;
+    font-family: "Novecento";
+    color: #2f1339;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    text-transform: uppercase; }

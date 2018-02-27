@@ -39,3 +39,37 @@ body.post-template-default{
 			}
 		}
 }
+
+//about.php
+
+body.page-template{
+	.entry-header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(180deg,
+		rgba(0,0,0,.4),		
+		rgba(0,0,0,.4)),
+		url("../../Images/about-hero.jpg");
+		background-size: cover, cover;
+		.entry-title{
+			font-size: 3rem;
+			letter-spacing: 2px;
+			font-family: $header__font;
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+	.entry-content{
+		margin: 3rem auto;
+		max-width: 800px;
+		h1{
+			text-align: center;
+			font-family: $header__font;
+			color: $h2__color;
+			letter-spacing: 2px;
+			font-size: 2.1rem;
+			text-transform: uppercase;
+		}
+	}
+}
