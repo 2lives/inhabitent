@@ -103,7 +103,7 @@ input {
   .site-content .image-stack .tent-logo {
     position: absolute; }
 
-.site-content .product-type-block-wrapper {
+.product-type-block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,18 +121,18 @@ input {
   border-top: 5px solid #e1e1e1;
   text-align: center;
   width: 23%; }
-  .site-content .product-type-block-wrapper:hover {
+  .product-type-block-wrapper:hover {
     border-color: #f0e4d1; }
-  .site-content .product-type-block-wrapper img {
+  .product-type-block-wrapper img {
     padding-top: 10px;
     width: 30%; }
-  .site-content .product-type-block-wrapper h2 {
+  .product-type-block-wrapper h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 4rem;
     font-family: "Merriweather"; }
-  .site-content .product-type-block-wrapper ul {
+  .product-type-block-wrapper ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,7 +141,7 @@ input {
         -ms-flex-direction: row;
             flex-direction: row;
     background: blue; }
-  .site-content .product-type-block-wrapper li {
+  .product-type-block-wrapper li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -166,12 +166,14 @@ input {
   padding: .75rem 1.5rem;
   background-color: #248A83; }
 
-.product-info-container h2 {
-  margin-bottom: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: #2f1339; }
+.product-info-container {
+  padding-top: 50px; }
+  .product-info-container h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #2f1339; }
 
 .inhabitent-journal {
   margin-left: auto;
@@ -182,7 +184,7 @@ input {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 70px;
     padding: .5rem .5rem;
     line-height: 1.25; }
   .inhabitent-journal ul {
@@ -206,24 +208,30 @@ input {
     border: 1px solid #e1e1e1;
     text-decoration: none;
     text-align: left; }
+    .inhabitent-journal li .entry-meta-wrapper {
+      height: 40%;
+      padding: 12px;
+      position: relative; }
     .inhabitent-journal li .entry-meta {
-      height: 30%; }
-      .inhabitent-journal li .entry-meta .entry-title a {
-        text-align: left;
-        font-size: 1.3rem;
-        line-height: 1.25rem;
-        text-decoration: none; }
+      font-size: .75rem;
+      font-family: "Merriweather"; }
+    .inhabitent-journal li .entry-title {
+      margin-bottom: 0;
+      display: block;
+      padding: 0; }
+      .inhabitent-journal li .entry-title a {
+        text-decoration: none;
+        font-size: 1.3rem; }
     .inhabitent-journal li a.black-btn {
       border: 1px solid black;
       text-decoration: none;
-      margin-top: 10px;
-      margin-left: 10px;
-      margin-bottom: 10px;
-      bottom: 0;
-      width: 125px;
-      height: 50px;
+      position: absolute;
       text-align: center;
-      padding-top: 5px; }
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+      bottom: 0; }
   .inhabitent-journal h2.entry-title {
     text-align: left;
     margin-top: 0px;
@@ -283,15 +291,6 @@ body.blog .site-main {
 article.post.type-post {
   display: block;
   width: 90%; }
-
-#site-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  text-transform: uppercase; }
 
 body.blog header {
   display: -webkit-box;
@@ -959,6 +958,15 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 /* Menus */
+#site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-transform: uppercase; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -1198,38 +1206,6 @@ textarea {
 .bypostauthor {
   display: block; }
 
-body.post-template-default .single-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding-top: 3rem;
-  padding-left: 50px; }
-
-body.post-template-default .single-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 70%;
-  padding-right: 3rem;
-  padding-top: 3rem;
-  padding-left: 5rem; }
-  body.post-template-default .single-content .entry-header {
-    width: 100%; }
-    body.post-template-default .single-content .entry-header img.attachment-post-thumbnail {
-      width: 100%;
-      height: auto;
-      position: relative; }
-  body.post-template-default .single-content .entry-meta {
-    position: absolute;
-    background: #248A83;
-    bottom: 0;
-    left: 0; }
-
 .widget-area {
   padding-left: 3rem;
   padding-top: 3rem;
@@ -1299,3 +1275,37 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body.post-template-default .single-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 3rem;
+  padding-left: 50px; }
+
+body.post-template-default .single-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-left: 5rem; }
+  body.post-template-default .single-content .entry-header {
+    width: 100%; }
+    body.post-template-default .single-content .entry-header img.attachment-post-thumbnail {
+      width: 100%;
+      height: auto;
+      position: relative; }
+    body.post-template-default .single-content .entry-header .entry-title {
+      background: #248A83;
+      color: #fff; }
+  body.post-template-default .single-content .entry-meta {
+    position: absolute;
+    background: #248A83;
+    bottom: 0;
+    left: 0; }

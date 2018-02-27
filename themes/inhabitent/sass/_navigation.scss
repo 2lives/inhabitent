@@ -6,7 +6,12 @@
 
 
 /* Menus */
-
+//nav 
+#site-navigation {
+	display: flex;
+	justify-content:flex-end;
+	text-transform: uppercase;
+	}
 .main-navigation {
 	clear: both;
 	display: block;
