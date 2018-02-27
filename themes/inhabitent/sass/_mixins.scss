@@ -431,19 +431,47 @@ body.archive{
 
 	h1{
 		text-transform: uppercase;
+		font-family: $header__font;
 	}
 
 	h2 {
 		text-transform: uppercase;
+		font-family: $header__font;
 	}
 
 	.findus-area{
 		width: 75%;
 		padding-right: 5%;
+		padding-left: 5%;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 		border-right: 1px solid #e1e1e1;
-	}
+		input{
+			background-color: #f4f4f4;
+			border: 1px solid #e1e1e1;
+		}
+		textarea{
+			background-color: #f4f4f4;
+			border: 1px solid #e1e1e1;
+		}
+		.wpcf7-submit{
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			padding: 0.75rem 1.50rem;
+			font-family: $header__font;
+			font-size: .9rem;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+			padding: .75rem 1.5rem;
+			background-color: #248A83;
+			&:hover{
+				background-color: darken(#248A83, 10%);
+			}
+			}
+}
+
 
 	.widget-area{
 		padding-top: 3rem;
