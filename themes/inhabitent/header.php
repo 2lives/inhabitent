@@ -27,7 +27,7 @@
 				</div>.site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="http://localhost:3000/project4/"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-tent.svg"/>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-tent.svg"/>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

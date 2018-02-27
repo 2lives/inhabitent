@@ -17,11 +17,34 @@
 	z-index: 100;
 	background-color:hsla(0,0%,100%,.85);
 	border-bottom: 1px solid #e1e1e1;
+
 	.nav-search{
-		padding-top: 15px;
+		padding-top: 18px;
 		margin-right: 40px;
 		&:hover{
 			color: $link__color;
+		}
+		.search-submit{
+			border: none;
+			background: none;
+			overflow: hidden;
+			outline: none;
+			padding: 0;
+			box-shadow: none;
+			svg{
+				width: 30px;
+				height: 1.2em;
+				color: $link__color;
+			}
+		}
+		.search-field{
+			background: transparent;
+			&:focus{
+				outline: none;
+				border: none;
+				display: block;
+				padding: 0px;
+			}
 		}
 	}
 	a img{
@@ -73,6 +96,10 @@
 		text-decoration: none;
 			}
 		}	
+	}
+	.search-form{
+		display: flex;
+		flex-direction: row-reverse;
 	}
 }
 
