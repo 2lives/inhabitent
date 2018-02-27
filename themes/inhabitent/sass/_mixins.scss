@@ -358,6 +358,9 @@ body.archive{
 		}
 		h1{
 			font-size: 2.4rem;
+			padding-top: 50px;
+			font-weight: bold;
+			font-family: $header__font;
 		}
 	}
 	.product-info-container {
@@ -372,6 +375,7 @@ body.archive{
 			font-size: 2.4rem;
 			letter-spacing: 2px;
 			margin-bottom: 0.5rem;
+			font-weight: bold;
 		}
 		a{
 			padding: 0;
@@ -473,6 +477,7 @@ body.archive{
 	}
 	h3{
 		margin: 0;
+		font-family: $header__font;
 		text-transform: uppercase;
 		color: #d99054;
 		letter-spacing: 2px;
@@ -554,8 +559,17 @@ body.archive{
 		border-right: 1px solid #e1e1e1;
 		width: 73%;
 		h2{
+			font-family: $header__font;
 			text-transform: uppercase;
 			letter-spacing: 2px;
+		}
+
+		.search-field{
+			text-transform: capitalize;
+			font-family: $text__font;
+			background-color: #f4f4f4;
+			width: 200px;
+			border-radius: 0;
 		}
 
 		a{
@@ -587,6 +601,7 @@ body.archive{
 		}
 	}
 	h1{
+		font-family: $header__font;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-size: 2em;

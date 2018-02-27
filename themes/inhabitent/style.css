@@ -354,7 +354,10 @@ body.archive .page-header {
   body.archive .page-header p {
     text-align: center; }
   body.archive .page-header h1 {
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: "Novecento"; }
 
 body.archive .product-info-container {
   border-bottom: 1px dashed #c8c8c8;
@@ -366,7 +369,8 @@ body.archive .product-info-container {
     line-height: 1.25;
     font-size: 2.4rem;
     letter-spacing: 2px;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    font-weight: bold; }
   body.archive .product-info-container a {
     padding: 0;
     background-color: #fff;
@@ -455,6 +459,7 @@ body.archive .content-block-wrapper {
       height: 55px; }
   .site-footer h3 {
     margin: 0;
+    font-family: "Novecento";
     text-transform: uppercase;
     color: #d99054;
     letter-spacing: 2px; }
@@ -531,8 +536,15 @@ body.archive .content-block-wrapper {
     border-right: 1px solid #e1e1e1;
     width: 73%; }
     #error404-wrapper .site-main h2 {
+      font-family: "Novecento";
       text-transform: uppercase;
       letter-spacing: 2px; }
+    #error404-wrapper .site-main .search-field {
+      text-transform: capitalize;
+      font-family: "Merriweather";
+      background-color: #f4f4f4;
+      width: 200px;
+      border-radius: 0; }
     #error404-wrapper .site-main a {
       text-decoration: none; }
     #error404-wrapper .site-main ul {
@@ -551,6 +563,7 @@ body.archive .content-block-wrapper {
     #error404-wrapper .widget-area h2 {
       text-transform: uppercase; }
   #error404-wrapper h1 {
+    font-family: "Novecento";
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2em; }
@@ -1169,6 +1182,8 @@ textarea {
   line-height: 1.75;
   right: 0;
   color: #2f1339; }
+  .widget-area .widget-title {
+    font-family: "Novecento"; }
   .widget-area a {
     text-decoration: none; }
 

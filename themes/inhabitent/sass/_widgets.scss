@@ -21,6 +21,9 @@ display:block;
 line-height: 1.75;
 right:0;
 color: $h2__color;
+	.widget-title{
+		font-family: $header__font;
+	}
 	a{
 		text-decoration: none;
 	}
