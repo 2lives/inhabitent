@@ -31,10 +31,18 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				
+					
 					<div class="nav-search">
-						<a href"#" class="nav-search-toggle" aria-hidden="true">
+						<!-- <a href"#" class="nav-search-toggle" aria-hidden="true">
 						<i class="fas fa-search"></i>
 						</a>
+						<label style="display: none;">
+							<input type="submit" id="search-box" placeholder="type and hit enter...">
+						</label> -->
+
+							<?php get_search_form();  ?>
+
 					</div>
 
 				</nav><!-- #site-navigation -->

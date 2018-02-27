@@ -23,7 +23,7 @@
 				<?php echo "<p><span class='bold'> Sunday: </span> Closed</p>";?>
 				</div>
 				<div class="logosvg">
-				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-text.svg"/></a>	
+				<a href="http://localhost:3000/project4/"><img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-text.svg"/></a>	
 				</div>
 			</footer><!-- #colophon -->
 			<div class="footer-copywrite">

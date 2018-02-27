@@ -12,6 +12,8 @@ function custom_loginlogo_url($url) {
     return 'http://localhost/project4/';
 }
 
+
+
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -92,6 +94,8 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'fontawesome',  'https://use.fontawesome.com/releases/v5.0.6/js/all.js	');
+	wp_enqueue_script( 'search', get_template_directory_uri() . '/build/js/search-toggle.min.js', array('jquery'), '', true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

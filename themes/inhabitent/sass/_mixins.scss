@@ -22,23 +22,31 @@ a{
 	}
 }
 
+input {
+	text-transform: uppercase;
+	width: 250px;
+}
+
+
+// todo move to a seperate file e.g. content or a new partial
+.blog {
+	.entry-header {
+		position: relative;
+		.entry-meta {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}
+
 #masthead{
 	height: 45spx;
 	width: 100%;
 	border-bottom: 1px solid #e1e1e1;	
 }
 
-.widget_archive{
-	ul{
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		a{
-			text-decoration: none;
-			font-family: $text__font;
-		}
-	}
-}
+
 
 .widget{
 	.day-of-week {
@@ -62,9 +70,12 @@ a{
 	.hero-image{
 		position: relative;
 		background: linear-gradient(180deg,
-										rgba(0,0,0,.4) 0,		
-										rgba(0,0,0,.4)),#969696,
+										rgba(0,0,0,.4),		
+										rgba(0,0,0,.4)),
 										url("../../Images/home-hero.jpg") no-repeat top;
+		background-size: cover, cover;
+		height: 100vh;
+		width: 100%;
 
 	}
 			.tent-logo{
@@ -219,6 +230,7 @@ body.blog{
 	border-right: 1px solid #e1e1e1;
 	margin-top: 60px;
 	padding-top: 3rem;
+	padding-left: 5rem;
 	.article-tile{
 		display: flex;
 		flex-direction: column;
@@ -231,7 +243,10 @@ body.blog{
 			font-family: Novecento Sans Web,sans-serif;
 			font-size: 1rem;
 			letter-spacing: 2px;
+			a:hover{
+				color: $hover__color;
 			}
+		}
 		.entry-header .entry-meta {
 			display: inline-block;
 			background-color: #248A83;
@@ -445,6 +460,14 @@ body.archive{
 	padding-top: 50px;
 	width: 256px;
 	height: 155px;
+	a{
+		text-decoration: none;
+		color: white;
+		font-family: $text__font;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }
 
 .business-hours {

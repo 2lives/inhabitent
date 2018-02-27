@@ -58,18 +58,21 @@ a {
   a:hover {
     color: #2f1339; }
 
+input {
+  text-transform: uppercase;
+  width: 250px; }
+
+.blog .entry-header {
+  position: relative; }
+  .blog .entry-header .entry-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
 #masthead {
   height: 45spx;
   width: 100%;
   border-bottom: 1px solid #e1e1e1; }
-
-.widget_archive ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .widget_archive ul a {
-    text-decoration: none;
-    font-family: "Merriweather"; }
 
 .widget .day-of-week {
   font-weight: bold; }
@@ -92,8 +95,11 @@ a {
   z-index: 10; }
   .site-content .image-stack .hero-image {
     position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696, url("../../Images/home-hero.jpg") no-repeat top;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696, url("../../Images/home-hero.jpg") no-repeat top; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/home-hero.jpg") no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/home-hero.jpg") no-repeat top;
+    background-size: cover, cover;
+    height: 100vh;
+    width: 100%; }
   .site-content .image-stack .tent-logo {
     position: absolute; }
 
@@ -232,7 +238,8 @@ body.blog .site-main {
   padding-right: 5%;
   border-right: 1px solid #e1e1e1;
   margin-top: 60px;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  padding-left: 5rem; }
   body.blog .site-main .article-tile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,6 +257,8 @@ body.blog .site-main {
       font-family: Novecento Sans Web,sans-serif;
       font-size: 1rem;
       letter-spacing: 2px; }
+      body.blog .site-main .article-tile h2.entry-title a:hover {
+        color: #f0e4d1; }
     body.blog .site-main .article-tile .entry-header .entry-meta {
       display: inline-block;
       background-color: #248A83;
@@ -445,6 +454,12 @@ body.archive .content-block-wrapper {
   padding-top: 50px;
   width: 256px;
   height: 155px; }
+  .contact-info a {
+    text-decoration: none;
+    color: white;
+    font-family: "Merriweather"; }
+    .contact-info a:hover {
+      text-decoration: underline; }
 
 .business-hours {
   display: -webkit-box;
@@ -1105,7 +1120,18 @@ textarea {
 .widget-area {
   display: block;
   line-height: 1.75;
-  right: 0; }
+  right: 0;
+  color: #2f1339; }
+  .widget-area a {
+    text-decoration: none; }
+
+.widget_archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .widget_archive ul a {
+    text-decoration: none;
+    font-family: "Merriweather"; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1144,6 +1170,43 @@ textarea {
 
 .bypostauthor {
   display: block; }
+
+body.post-template-default .single-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 3rem;
+  padding-left: 50px; }
+
+body.post-template-default .single-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-left: 5rem; }
+  body.post-template-default .single-content .entry-header {
+    width: 100%; }
+    body.post-template-default .single-content .entry-header img.attachment-post-thumbnail {
+      width: 100%;
+      height: auto;
+      position: relative; }
+  body.post-template-default .single-content .entry-meta {
+    position: absolute;
+    background: #248A83;
+    bottom: 0;
+    left: 0; }
+
+.widget-area {
+  padding-left: 3rem;
+  padding-top: 3rem;
+  border-left: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Media
