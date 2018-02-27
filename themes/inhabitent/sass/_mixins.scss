@@ -127,8 +127,8 @@ input {
 	width: 95%;
 margin-left: auto;
 margin-right: auto;
-padding-left: 5px;
-padding-right: 5px;
+padding-left: 10px;
+padding-right:10px;
 }
 
 
@@ -441,7 +441,7 @@ body.archive{
 	height: 270px;
 	justify-content: space-between;
 	background-image: url("../../Images/dark-wood.png");
-	padding-left: 20px;
+	padding-left: 115px;
 	padding-right: 20px;
 	.logosvg {
 		display: flex;
@@ -463,6 +463,12 @@ body.archive{
 	}
 	p{
 		margin: 0;
+		color: #fff;
+		padding: 5px;
+		svg{
+			margin-left: 5px;
+			margin-right: 5px;
+		}
 	}
 }
 
