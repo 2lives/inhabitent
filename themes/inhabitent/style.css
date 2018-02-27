@@ -1244,7 +1244,7 @@ body.blog .site-main {
       position: relative; }
       body.blog .site-main .article-tile .entry-header .entry-meta {
         position: absolute;
-        bottom: 0;
+        bottom: 8px;
         right: 0; }
     body.blog .site-main .article-tile .journal-readmore {
       border: 1px solid black;
@@ -1527,3 +1527,17 @@ body.page-template .entry-content {
     letter-spacing: 2px;
     font-size: 2.1rem;
     text-transform: uppercase; }
+
+body.archive .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+body.archive .widget-area {
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+body.archive .widget-title {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
