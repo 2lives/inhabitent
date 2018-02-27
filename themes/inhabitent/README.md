@@ -1,21 +1,49 @@
-# RED Starter
+Inhabitent v1.0
+Just another hipster camping website
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+Getting Started
+visit url: https://2lives.github.io/inhabitent/ and browse the shop!
 
-## Installation
+Motivation:
+Who doesn't need hipster camping gear?
+-----------------------------------------------------------------
 
-### 1. Download me (don't clone me!)
+Built With:
+wordpress
+sql
+php
+jquery
+sass
+fontawesome
 
-Then add me to your `wp-content` directory.
+-----------------------------------------------------------------
+A simple Jquery function is  used for the animated search bar in the nav.
+example:
+(function ($) {
 
-### 2. Rename the `redstarter-master` directory
+  var $seachInput = $('.main-navigation .search-field');
+  $seachInput.hide();
 
-Make sure that the theme directory name is project appropriate!
+  $('.main-navigation .search-submit').on('click', function (evt) {
+    evt.preventDefault();
+    $seachInput.show('slow');
+    $seachInput.focus();
 
-### 3. Install the dev dependencies
+    $(document).on('keypress', function (event) {
+      if ($seachInput.val() !== '') {
+        if (event.which == 13) {
+          $('.search-form').submit();
+        }
+      }
+    });  
+  });
+  $seachInput.on('blur', function () {
+    $seachInput.hide(500);
+  });
+}(jQuery));
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+sass used for styling of the templates.
 
-### 4. Update the proxy in `gulpfile.js`
+fontawesome to get the icons.
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+a wordpress plugin (contact form 7) is used for the email form on the "find us page".
