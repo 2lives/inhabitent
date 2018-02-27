@@ -16,14 +16,9 @@ get_header(); ?>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
+		</header><!-- .entry-header -->
+<div class="single-product-text">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
 	<div class="entry-content">
     <h3 class="product-price"><?php echo CFS()->get( 'price' ); ?></h3> <!--display price -->
 		<?php the_content(); ?>
@@ -33,26 +28,24 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	<div class="social-buttons">
+		<button type="button" class="black-btn"><i class="fab fa-facebook-f"></i> Like</button>
+		<button type="button" class="black-btn"><i class="fab fa-twitter"></i> Tweet</button>
+		<button type="button" class="black-btn"><i class="fab fa-pinterest"></i> Pin</button>	
+	</div>
 </article><!-- #post-## -->
 
-			<?php the_post_navigation(); ?>
+</div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
