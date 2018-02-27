@@ -2,7 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
 //single.php
 
 body.post-template-default{
@@ -34,8 +33,7 @@ body.post-template-default{
 			.entry-meta {
 				position: absolute;
 				background: $link__color;
-				bottom: 0;
-				left: 0;
+				bottom: 8px;
 			}
 		}
 }

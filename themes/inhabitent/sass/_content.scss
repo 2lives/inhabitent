@@ -31,6 +31,68 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+//journal main page (blog)
+body.blog{
+	.site-main{
+	 max-width: 70%;
+	 padding-right: 5%;
+	 border-right: 1px solid #e1e1e1;
+	 margin-top: 60px;
+	 padding-top: 3rem;
+	 padding-left: 5rem;
+	 .article-tile{
+		 display: flex;
+		 flex-direction: column;
+		 padding-bottom: 50px;
+		 h2.entry-title {
+			 background-color: #248A83;
+			 width: 70%;
+			 position: absolute;
+			 margin-top: 40px;
+			 padding-left: 24px;
+			 font-family: Novecento Sans Web,sans-serif;
+			 font-size: 1rem;
+			 letter-spacing: 2px;
+			 a:hover{
+				 color: $hover__color;
+			 }
+		 }
+		 .entry-header .entry-meta {
+			 display: inline-block;
+			 background-color: #248A83;
+			 color: white;
+			 text-align: right;
+			 padding-right: 5px;
+			 height: 30px;
+				 }
+		 .entry-header {
+						 position: relative;
+		 .entry-meta {
+							 position: absolute;
+							 bottom: 0;
+							 right: 0;
+						 }
+					 }
+			 .journal-readmore{
+				 border: 1px solid black;
+				 color: black;
+				 text-transform: uppercase;
+				 font-family: $header__font;
+				 text-decoration: none;
+				 text-align: center;
+				 padding: .50rem 1.1rem;
+				 bottom: 0;
+				 width: 150px;
+				 height: 42px;
+				 &:hover{
+					 background-color: $link__color;
+					 color: #fff;
+				 }
+				 }
+			 }
+			 }
+	 }
 //single-product.php
 body.product-template-default{
 	article{
@@ -110,6 +172,91 @@ body.product-template-default{
 		padding-top: 3rem;
 		border-left: 1px solid #e1e1e1;
 	}
+
+	//single.php
+
+	.single-wrapper{
+		.entry-header{
+			position: relative;
+		}
+		.entry-title{
+			position: absolute;
+			top: 0;
+			padding: .75rem 1.5rem;
+			font-size: 2.1rem;
+			letter-spacing: 2px;
+			max-width: 75%;
+			font-family: $header__font;
+			text-transform: uppercase;
+		}
+		.single-content .entry-meta{
+			bottom: 8px;
+			right: 0;
+			position: absolute;
+			text-align: right;
+			color: #fff;
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		.widget-title{
+			text-transform: uppercase;
+		}
+}
+	#respond{
+		display: block;
+		p{
+			display: flex;
+			flex-direction: column;
+			font-family: "Merriweather" Web, serif;
+		}
+		.comment-form-author{
+			float: left;
+			margin-right: 1%;
+			width: 49%;
+		}
+		.comment-form-email{
+			margin-left: 1%;
+			float: left;
+			width: 49%;
+		}
+		.comment-form-url{
+			clear: left;
+			width: 100%;
+			#url{
+				width: 100%;
+			}
+		}
+		input{
+			background-color: #f4f4f4;
+			border: 1px solid #e1e1e1;
+			width:300px;
+		}
+		textarea{
+			background-color: #f4f4f4;
+			border: 1px solid #e1e1e1;
+		}
+		#submit{
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			padding: 0.75rem 1.50rem;
+			font-family: $header__font;
+			font-size: .9rem;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+			padding: .75rem 1.5rem;
+			background-color: #248A83;
+			width: 125px;
+			&:hover{
+				background-color: darken(#248A83, 10%);
+			}
+			}
+}
+
+
 
 
 
