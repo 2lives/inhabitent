@@ -1,6 +1,54 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+//home page
+body.home{
+	.adventure-wrapper{
+		width: 95%;
+		.read{
+			border: 1px solid #000;
+			color: #000;
+			text-transform: uppercase;
+			font-family: Novecento;
+			text-decoration: none;
+			position: absolute;
+			text-align: center;
+			padding: .5rem 1.75rem;
+		}
+		ul{
+			display: flex;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			.flexbox-adv{
+				display: flex;
+				flex-direction: column;
+				&:firstchild{
+					height: 50%;
+				}
+			}
+			a{
+				text-decoration: none;
+				font-family: "Merriweather";
+				font-weight: 400;
+			}
+			li{
+				.canoe-girl{
+					max-width: 40%;
+				}
+				#bottom-adventures{
+					display: flex;
+				}
+				.mountain-hikers{
+						width: 25%;
+					}
+				.night-sky{
+						width: 25%;
+					}
+				}
+			}
+		}
+	}
 
 //single.php
 
@@ -45,11 +93,6 @@ body.page-template{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: linear-gradient(180deg,
-		rgba(0,0,0,.4),		
-		rgba(0,0,0,.4)),
-		url("../../Images/about-hero.jpg");
-		background-size: cover, cover;
 		.entry-title{
 			font-size: 3rem;
 			letter-spacing: 2px;

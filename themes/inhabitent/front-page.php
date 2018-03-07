@@ -1,16 +1,17 @@
 <?php
-get_header(); ?>
+get_header();
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 	<div class="image-stack">
 		<div class="hero-image">		
-			<!-- <img src="<?php echo get_template_directory_uri(); ?>/Images/home-hero.jpg" style="rgba(0, 0, 0, 1.7);";/> -->
-		</div><!--hero-image-->
+			<img src="<?php echo get_template_directory_uri(); ?>/Images/home-hero.jpg" style="rgba(0, 0, 0, 1.7);";/>
+		</div>
 		<div class="tent-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/Images/inhabitent-logo-full.svg"/>
 		</div> <!--tent-logo-->
-	</div> <!--image-stack-->
+	</div>
 				<!-- Product terms -->
 				<section class="product-info-container">
                 <h2>Shop Stuff</h2>
@@ -73,6 +74,43 @@ get_header(); ?>
 				</ul>
 				<?php endif?>
 			</div> <!-- Inhabitent Journal -->
+	<section class=" adventure-wrapper">
+		<p> Latest Adventures </p>
+		<ul>
+			<li class="canoe-girl">
+				<img src="<?php echo get_template_directory_uri(); ?>/Images/canoe-girl.jpg";/>
+				<div class="story-info">
+					<a href="#">Getting back to nature in a canoe</a>
+					<a href="#" class="read">Read More</a>
+				</div>
+			</li>
+			<div class="flexbox-adv"
+			<li class="beach-bonfire">
+				<img src="<?php echo get_template_directory_uri(); ?>/Images/beach-bonfire.jpg";/>
+				<div class="story-info">
+					<a href="#">A night with friends at the beach</a>
+					<a href="#" class="read">Read More</a>
+				</div>
+			</li>
+			<div id="bottom-adventures">
+			<li class="mountain-hikers">				
+				<img src="<?php echo get_template_directory_uri(); ?>/Images/mountain-hikers.jpg";/>
+				<div class="story-info">
+					<a href="#">Taking in the view at big mountain</a>
+					<a href="#" class="read">Read More</a>
+				</div>
+			</li>
+			<li class="night-sky">	
+				<img src="<?php echo get_template_directory_uri(); ?>/Images/night-sky.jpg";/>
+					<div class="story-info">
+						<a href="#">Star-gazing at the night sky</a>
+						<a href="#" class="read">Read More</a>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	</section><!-- adventure wrapper -->
 
   
   <?php get_footer(); ?>
