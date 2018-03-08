@@ -2,53 +2,58 @@
 # Page Templates
 --------------------------------------------------------------*/
 //home page
-body.home{
-	.adventure-wrapper{
-		width: 95%;
-		.read{
-			border: 1px solid #000;
-			color: #000;
-			text-transform: uppercase;
-			font-family: Novecento;
-			text-decoration: none;
-			position: absolute;
-			text-align: center;
-			padding: .5rem 1.75rem;
-		}
-		ul{
-			display: flex;
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			.flexbox-adv{
-				display: flex;
-				flex-direction: column;
-				&:firstchild{
-					height: 50%;
-				}
-			}
-			a{
-				text-decoration: none;
-				font-family: "Merriweather";
-				font-weight: 400;
-			}
-			li{
-				.canoe-girl{
-					max-width: 40%;
-				}
-				#bottom-adventures{
-					display: flex;
-				}
-				.mountain-hikers{
-						width: 25%;
-					}
-				.night-sky{
-						width: 25%;
-					}
-				}
-			}
-		}
+.home {
+	.adventure-pannels{
+		max-width: 1120px;
+		height: 600px;
+		display: flex;
+
+	.canoe-girl{
+		background: linear-gradient(180deg,
+		rgba(0,0,0,.4),		
+		rgba(0,0,0,.4)),
+		url("../../Images/canoe-girl.jpg") no-repeat center;
+		background-size: cover;
+		height: 600px;
+		position: relative;
 	}
+	.adventure-right{
+		display: flex;
+		flex-direction: column;
+
+	.beach-bonfire{
+		background: linear-gradient(180deg,
+	rgba(0,0,0,.4),		
+	rgba(0,0,0,.4)),
+			url("../../Images/beach-bonfire.jpg") no-repeat center;
+			background-size: cover;
+			height: 300px;
+			position: relative;
+	}
+	.adventure-bottom{
+		display: flex;
+	.mountain-hikers{
+		background: linear-gradient(180deg,
+		rgba(0,0,0,.4),		
+		rgba(0,0,0,.4)),
+		url("../../Images/mountain-hikers.jpg") no-repeat center;
+		background-size: cover;
+		height: 300px;
+		position: relative;
+	}
+	.night-sky{
+		background: linear-gradient(180deg,
+		rgba(0,0,0,.4),		
+		rgba(0,0,0,.4)),
+		url("../../Images/night-sky.jpg") no-repeat center;
+		background-size: cover;
+		height: 300px;
+		position: relative;
+				}
+			}	//adventure-bottom
+		}//adventure-right	
+	}//adventure wrapper
+}
 
 //single.php
 

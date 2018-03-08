@@ -76,40 +76,36 @@ get_header();
 			</div> <!-- Inhabitent Journal -->
 	<section class=" adventure-wrapper">
 		<p> Latest Adventures </p>
-		<ul>
-			<li class="canoe-girl">
-				<img src="<?php echo get_template_directory_uri(); ?>/Images/canoe-girl.jpg";/>
+		<div class="adventure-pannels">
+			<div class="canoe-girl">
 				<div class="story-info">
 					<a href="#">Getting back to nature in a canoe</a>
-					<a href="#" class="read">Read More</a>
-				</div>
-			</li>
-			<div class="flexbox-adv"
-			<li class="beach-bonfire">
-				<img src="<?php echo get_template_directory_uri(); ?>/Images/beach-bonfire.jpg";/>
+					<a href="#"><span class="read">Read More</span></a>
+				</div><!-- story info -->
+			</div><!--canoe girl-->
+		<div class="adventure-right">
+			<div class="beach-bonfire">
 				<div class="story-info">
 					<a href="#">A night with friends at the beach</a>
-					<a href="#" class="read">Read More</a>
-				</div>
-			</li>
-			<div id="bottom-adventures">
-			<li class="mountain-hikers">				
-				<img src="<?php echo get_template_directory_uri(); ?>/Images/mountain-hikers.jpg";/>
+					<a href="#"><span class="read">Read More</span></a>
+				</div><!-- story info -->
+			</div><!--beach bonfire-->
+		<div class="adventure-bottom">
+			<div class="mountain-hikers">				
 				<div class="story-info">
 					<a href="#">Taking in the view at big mountain</a>
-					<a href="#" class="read">Read More</a>
-				</div>
-			</li>
-			<li class="night-sky">	
-				<img src="<?php echo get_template_directory_uri(); ?>/Images/night-sky.jpg";/>
+					<a href="#"><span class="read">Read More</span></a>
+				</div><!-- story info -->
+			</div><!--mountain hikers-->
+			<div class="night-sky">	
 					<div class="story-info">
 						<a href="#">Star-gazing at the night sky</a>
-						<a href="#" class="read">Read More</a>
-					</div>
-				</div>
-			</div>
-		</li>
-	</ul>
+						<a href="#" ><span class="read">Read More</span></a>
+				</div><!--story info-->
+			</div><!--night sky-->
+		</div><!--adventure-bottom-->
+		</div><!-- adventure-right-->
+	</div><!-- adventure pannels -->
 	</section><!-- adventure wrapper -->
 
   

@@ -1463,48 +1463,48 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body.home .adventure-wrapper {
-  width: 95%; }
-  body.home .adventure-wrapper .read {
-    border: 1px solid #000;
-    color: #000;
-    text-transform: uppercase;
-    font-family: Novecento;
-    text-decoration: none;
-    position: absolute;
-    text-align: center;
-    padding: .5rem 1.75rem; }
-  body.home .adventure-wrapper ul {
+.home .adventure-pannels {
+  max-width: 1120px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .home .adventure-pannels .canoe-girl {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/canoe-girl.jpg") no-repeat center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/canoe-girl.jpg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative; }
+  .home .adventure-pannels .adventure-right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    body.home .adventure-wrapper ul .flexbox-adv {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      body.home .adventure-wrapper ul .flexbox-adv:firstchild {
-        height: 50%; }
-    body.home .adventure-wrapper ul a {
-      text-decoration: none;
-      font-family: "Merriweather";
-      font-weight: 400; }
-    body.home .adventure-wrapper ul li .canoe-girl {
-      max-width: 40%; }
-    body.home .adventure-wrapper ul li #bottom-adventures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .home .adventure-pannels .adventure-right .beach-bonfire {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/beach-bonfire.jpg") no-repeat center;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/beach-bonfire.jpg") no-repeat center;
+      background-size: cover;
+      height: 300px;
+      position: relative; }
+    .home .adventure-pannels .adventure-right .adventure-bottom {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    body.home .adventure-wrapper ul li .mountain-hikers {
-      width: 25%; }
-    body.home .adventure-wrapper ul li .night-sky {
-      width: 25%; }
+      .home .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/mountain-hikers.jpg") no-repeat center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/mountain-hikers.jpg") no-repeat center;
+        background-size: cover;
+        height: 300px;
+        position: relative; }
+      .home .adventure-pannels .adventure-right .adventure-bottom .night-sky {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/night-sky.jpg") no-repeat center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/night-sky.jpg") no-repeat center;
+        background-size: cover;
+        height: 300px;
+        position: relative; }
 
 body.post-template-default .single-wrapper {
   display: -webkit-box;
