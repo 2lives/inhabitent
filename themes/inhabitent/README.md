@@ -9,17 +9,18 @@ Who doesn't need hipster camping gear?
 -----------------------------------------------------------------
 
 Built With:
-wordpress
-sql
-php
-jquery
-sass
-fontawesome
+WordPress,
+SQL,
+php,
+JQuery,
+sass,
+FontAwesome
 
 -----------------------------------------------------------------
 A simple Jquery function is  used for the animated search bar in the nav.
 example:
-(function ($) {
+
+`(function ($) {
 
   var $seachInput = $('.main-navigation .search-field');
   $seachInput.hide();
@@ -40,10 +41,21 @@ example:
   $seachInput.on('blur', function () {
     $seachInput.hide(500);
   });
-}(jQuery));
+}(jQuery));`
 
 sass used for styling of the templates.
 
 fontawesome to get the icons.
 
 a wordpress plugin (contact form 7) is used for the email form on the "find us page".
+
+Sneak peek at the site: 
+
+Home hero banner:
+
+<img src="Images/FireShot Capture 11 - inhabitent - http___localhost_3000_project4_.png">
+
+
+Item spotlight page: 
+
+<img src="Images/FireShot Capture 12 - Ceramic Mug – inhabitent - http___localhost_3000_project4_product_ceramic-mug_.png">
