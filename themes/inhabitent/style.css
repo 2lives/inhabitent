@@ -75,7 +75,6 @@ input {
 
 .site-content .image-stack {
   width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +90,6 @@ input {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/home-hero.jpg") no-repeat top;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/home-hero.jpg") no-repeat top;
     background-size: cover, cover;
-    height: 100vh;
     width: 100%; }
   .site-content .image-stack .tent-logo {
     position: absolute; }
@@ -1463,19 +1461,26 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.home .adventure-wrapper {
+  padding: 5%; }
+  .home .adventure-wrapper .adventure-title {
+    text-align: center;
+    color: #2f1339;
+    font-family: "Novecento";
+    margin-bottom: 3.75rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
 .home .adventure-pannels {
-  max-width: 1120px;
+  width: 100%;
   height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .home .adventure-pannels .canoe-girl {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/canoe-girl.jpg") no-repeat center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/canoe-girl.jpg") no-repeat center;
-    background-size: cover;
-    height: 600px;
-    position: relative; }
-  .home .adventure-pannels .adventure-right {
+  display: flex;
+  font-family: "Merriweather"; }
+  .home .adventure-pannels .story-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1483,28 +1488,88 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .home .adventure-pannels a {
+    text-decoration: none; }
+    .home .adventure-pannels a .read {
+      border: 1px solid #fff;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Novecento";
+      text-align: center;
+      font-size: 1rem;
+      padding: .50rem 1.1rem; }
+  .home .adventure-pannels .canoe-girl {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/canoe-girl.jpg") no-repeat center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/canoe-girl.jpg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+    margin-right: 10px;
+    position: relative;
+    font-size: 3rem;
+    padding: 2%;
+    text-transform: capitalize; }
+    .home .adventure-pannels .canoe-girl a:visited {
+      color: #fff; }
+      .home .adventure-pannels .canoe-girl a:visited:hover {
+        color: #f0e4d1; }
+  .home .adventure-pannels .adventure-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%; }
     .home .adventure-pannels .adventure-right .beach-bonfire {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/beach-bonfire.jpg") no-repeat center;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/beach-bonfire.jpg") no-repeat center;
       background-size: cover;
       height: 300px;
-      position: relative; }
+      margin-bottom: 10px;
+      position: relative;
+      font-size: 2.4rem;
+      padding: 2%;
+      text-transform: capitalize; }
+      .home .adventure-pannels .adventure-right .beach-bonfire a:visited {
+        color: #fff; }
+        .home .adventure-pannels .adventure-right .beach-bonfire a:visited:hover {
+          color: #f0e4d1; }
     .home .adventure-pannels .adventure-right .adventure-bottom {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      padding-bottom: 10px; }
       .home .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers {
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/mountain-hikers.jpg") no-repeat center;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/mountain-hikers.jpg") no-repeat center;
         background-size: cover;
         height: 300px;
-        position: relative; }
+        width: 320px;
+        position: relative;
+        font-size: 1.6rem;
+        padding: 2%;
+        text-transform: capitalize; }
+        .home .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers a:visited {
+          color: #fff; }
+          .home .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers a:visited:hover {
+            color: #f0e4d1; }
       .home .adventure-pannels .adventure-right .adventure-bottom .night-sky {
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../Images/night-sky.jpg") no-repeat center;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Images/night-sky.jpg") no-repeat center;
         background-size: cover;
         height: 300px;
-        position: relative; }
+        width: 320px;
+        margin-left: 10px;
+        position: relative;
+        font-size: 1.6rem;
+        padding: 2%;
+        text-transform: capitalize; }
+        .home .adventure-pannels .adventure-right .adventure-bottom .night-sky a:visited {
+          color: #fff; }
+          .home .adventure-pannels .adventure-right .adventure-bottom .night-sky a:visited:hover {
+            color: #f0e4d1; }
 
 body.post-template-default .single-wrapper {
   display: -webkit-box;

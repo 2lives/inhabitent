@@ -48,7 +48,6 @@ input {
 .site-content{
 	.image-stack {
 		width: 100vw;
-		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -61,7 +60,6 @@ input {
 										rgba(0,0,0,.4)),
 										url("../../Images/home-hero.jpg") no-repeat top;
 		background-size: cover, cover;
-		height: 100vh;
 		width: 100%;
 
 	}

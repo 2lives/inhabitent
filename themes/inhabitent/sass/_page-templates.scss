@@ -3,10 +3,41 @@
 --------------------------------------------------------------*/
 //home page
 .home {
+	.adventure-wrapper{
+		padding: 5%;
+		.adventure-title{
+			text-align: center;
+			color: $h2__color;
+			font-family: "Novecento";
+			margin-bottom: 3.75rem;
+			font-weight: 400;
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
 	.adventure-pannels{
-		max-width: 1120px;
+		width: 100%;
 		height: 600px;
 		display: flex;
+		font-family: "Merriweather";
+		.story-info{
+			display: flex;
+			flex-direction: column;
+		}
+		
+		a{
+			text-decoration: none;
+			.read{
+				border: 1px solid #fff;
+				color: #fff;
+				text-transform: uppercase;
+				font-family: $header__font;
+				text-align: center;
+				font-size: 1rem;
+				padding: .50rem 1.1rem;
+			}
+		}
 
 	.canoe-girl{
 		background: linear-gradient(180deg,
@@ -15,11 +46,23 @@
 		url("../../Images/canoe-girl.jpg") no-repeat center;
 		background-size: cover;
 		height: 600px;
+		width: 50%;
+		margin-right: 10px;
 		position: relative;
+		font-size: 3rem;
+		padding: 2%;
+		text-transform: capitalize;
+		a:visited{
+			color: #fff;
+			&:hover{
+				color: #f0e4d1
+			}
+		}
 	}
 	.adventure-right{
 		display: flex;
 		flex-direction: column;
+		width: 50%;
 
 	.beach-bonfire{
 		background: linear-gradient(180deg,
@@ -28,27 +71,59 @@
 			url("../../Images/beach-bonfire.jpg") no-repeat center;
 			background-size: cover;
 			height: 300px;
+			margin-bottom: 10px;
 			position: relative;
+			font-size: 2.4rem;
+			padding: 2%;
+			text-transform: capitalize;
+			a:visited{
+				color: #fff;
+				&:hover{
+					color: #f0e4d1
+				}
+			}
 	}
-	.adventure-bottom{
-		display: flex;
-	.mountain-hikers{
-		background: linear-gradient(180deg,
-		rgba(0,0,0,.4),		
-		rgba(0,0,0,.4)),
-		url("../../Images/mountain-hikers.jpg") no-repeat center;
-		background-size: cover;
-		height: 300px;
-		position: relative;
-	}
+		.adventure-bottom{
+				display: flex;
+				padding-bottom: 10px;
+			.mountain-hikers{
+				background: linear-gradient(180deg,
+				rgba(0,0,0,.4),		
+				rgba(0,0,0,.4)),
+				url("../../Images/mountain-hikers.jpg") no-repeat center;
+				background-size: cover;
+				height: 300px;
+				width: 320px;
+				position: relative;
+				font-size: 1.6rem;
+				padding: 2%;
+				text-transform: capitalize;
+				a:visited{
+					color: #fff;
+					&:hover{
+						color: #f0e4d1
+					}
+				}
+			}
 	.night-sky{
-		background: linear-gradient(180deg,
-		rgba(0,0,0,.4),		
-		rgba(0,0,0,.4)),
-		url("../../Images/night-sky.jpg") no-repeat center;
-		background-size: cover;
-		height: 300px;
-		position: relative;
+				background: linear-gradient(180deg,
+				rgba(0,0,0,.4),		
+				rgba(0,0,0,.4)),
+				url("../../Images/night-sky.jpg") no-repeat center;
+				background-size: cover;
+				height: 300px;
+				width: 320px;
+				margin-left: 10px;
+				position: relative;
+				font-size: 1.6rem;
+				padding: 2%;
+				text-transform: capitalize;
+				a:visited{
+					color: #fff;
+					&:hover{
+						color: #f0e4d1
+					}
+				}
 				}
 			}	//adventure-bottom
 		}//adventure-right	

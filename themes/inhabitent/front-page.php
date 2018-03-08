@@ -75,31 +75,31 @@ get_header();
 				<?php endif?>
 			</div> <!-- Inhabitent Journal -->
 	<section class=" adventure-wrapper">
-		<p> Latest Adventures </p>
+		<p class="adventure-title"> Latest Adventures </p>
 		<div class="adventure-pannels">
 			<div class="canoe-girl">
 				<div class="story-info">
-					<a href="#">Getting back to nature in a canoe</a>
+					<a href="#" class="canoe-text">Getting back to nature in a canoe</a>
 					<a href="#"><span class="read">Read More</span></a>
 				</div><!-- story info -->
 			</div><!--canoe girl-->
 		<div class="adventure-right">
 			<div class="beach-bonfire">
 				<div class="story-info">
-					<a href="#">A night with friends at the beach</a>
+					<a href="#"class=""beach-text"">A night with friends at the beach</a>
 					<a href="#"><span class="read">Read More</span></a>
 				</div><!-- story info -->
 			</div><!--beach bonfire-->
 		<div class="adventure-bottom">
 			<div class="mountain-hikers">				
 				<div class="story-info">
-					<a href="#">Taking in the view at big mountain</a>
+					<a href="#" class="bottom-adv-text">Taking in the view at big mountain</a>
 					<a href="#"><span class="read">Read More</span></a>
 				</div><!-- story info -->
 			</div><!--mountain hikers-->
 			<div class="night-sky">	
 					<div class="story-info">
-						<a href="#">Star-gazing at the night sky</a>
+						<a href="#" class="bottom-adv-text">Star-gazing at the night sky</a>
 						<a href="#" ><span class="read">Read More</span></a>
 				</div><!--story info-->
 			</div><!--night sky-->

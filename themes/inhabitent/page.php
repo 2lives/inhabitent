@@ -17,15 +17,6 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-
-	<h2>we take camping very seriously.</h2>
-	<p>Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions.</p>
-	<h2> send us email!</h2>
-	<?php
-  echo do_shortcode(
-    "[contact-form-7 id='156' title='Contact form 1']"
-  );
-?>
 		</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
