@@ -42,6 +42,7 @@ example:
     $seachInput.hide(500);
   });
 }(jQuery));`
+-----------------------------------------------------------------
 
 sass used for styling of the templates.
 
